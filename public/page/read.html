@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../Stylesheets/read.css" />
+    <title>Menu Trang Chủ</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Tìm Kiếm Giày</h1>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="home.html"><img src="" alt="" />Trang chủ</a>
+      </li>
+      <li>
+        <a href="create.html"><img src="" alt="" />Thêm Giày</a>
+      </li>
+      <li>
+        <a href="read.html"><img src="" alt="" />Tìm kiếm Giày</a>
+      </li>
+      <li>
+        <a href="read-for-update.html"
+          ><img src="" alt="" />Tìm Kiếm Giày Cần Cập Nhật</a
+        >
+      </li>
+    </ul>
+
+    <div class="container">
+      <form id="searchForm" action="/read" method="GET">
+        <label for="tenGiay">Ten Giay:</label>
+        <input type="text" id="tenGiay" name="tenGiay" /> <br />
+
+        <label for="nhaSX">Nha San Xuat:</label>
+        <input type="text" id="nhaSX" name="nhaSX" /> <br />
+
+        <label for="size">Size: </label>
+        <input
+          type="sizeid"
+          id="sizeFrom"
+          name="sizeFrom"
+          placeholder="from/gte"
+        />
+        <input type="sizeid" id="sizeTo" name="sizeTo" placeholder="to/lte" />
+        <br />
+        <div class="button-container">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+    <div id="searchResult"></div>
+  </body>
+  <script src="./../Javascript/read.js"></script>
+</html>

@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: justify;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 15px;
+}
+
+.menu li a:hover {
+  background-color: #ff4081;
+  color: white;
+}
+
+.menu li a:active {
+  background-color: #f50057;
+  color: #f4f4f4;
+}
+
+.menu li img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: pink;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff4081;
+}
+
+#message {
+  text-align: center;
+  font-weight: bold;
+  color: blue; /* Thêm màu cho thông báo */
+}
+
+.show_image {
+  display: "none";
+  width: 100px;
+  height: 100px;
+}
+.div_image_class {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}

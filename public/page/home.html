@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Trang Chủ</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .header h1 {
+        text-align: center;
+        color: black;
+      }
+
+      .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .menu li {
+        display: inline-block;
+      }
+
+      .menu li a {
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 20px 30px;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 15px;
+      }
+
+      .menu li a:hover {
+        background-color: #ff4081;
+        color: white;
+      }
+
+      .menu li a:active {
+        background-color: #f50057;
+        color: #f4f4f4;
+      }
+
+      .menu li img {
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Trang chủ</h1>
+      </div>
+      <ul class="menu">
+        <li>
+          <a href="create.html"><img src="" alt="" />Thêm Giày</a>
+        </li>
+        <li>
+          <a href="read.html"><img src="" alt="" />Tìm kiếm Giày</a>
+        </li>
+        <li>
+          <a href="read-for-update.html"
+            ><img src="" alt="" />Tìm Kiếm Giày Cần Cập Nhật</a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

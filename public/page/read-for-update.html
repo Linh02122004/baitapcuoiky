@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cập nhật Thông Tin Giày</title>
+    <link rel="stylesheet" href="./../Stylesheets/read-for-update.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Cập Nhật Thông Tin Giày</h1>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="home.html"><img src="" alt="" />Trang chủ</a>
+      </li>
+      <li>
+        <a href="create.html"><img src="" alt="" />Thêm Giày</a>
+      </li>
+      <li>
+        <a href="read.html"><img src="" alt="" />Tìm kiếm Giày</a>
+      </li>
+      <li>
+        <a href="read-for-update.html"
+          ><img src="" alt="" />Tìm Kiếm Giày Cần Cập Nhật</a
+        >
+      </li>
+    </ul>
+    <div class="container">
+      <!-- <form action="http://127.0.0.1:3000/read/for/update" method="GET"> -->
+      <div>
+        <label for="maGiay">Mã Giày:</label>
+        <input type="text" id="maGiay" name="maGiay" required />
+
+        <div class="button-container">
+          <button onclick="handleGetData()">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </div>
+      <!-- </form> -->
+    </div>
+  </body>
+  <script src="./../Javascript/read-for-update.js"></script>
+</html>

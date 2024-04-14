@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Trang Chủ</title>
+    <link rel="stylesheet" href="./../Stylesheets/create.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Thêm Giày</h1>
+    </div>
+    <ul class="menu">
+      <li>
+        <a href="home.html"><img src="" alt="" />Trang chủ</a>
+      </li>
+      <li>
+        <a href="create.html"><img src="" alt="" />Thêm Giày</a>
+      </li>
+      <li>
+        <a href="read.html"><img src="" alt="" />Tìm kiếm Giày</a>
+      </li>
+      <li>
+        <a href="read-for-update.html"
+          ><img src="" alt="" />Tìm Kiếm Giày Cần Cập Nhật</a
+        >
+      </li>
+      <a href="importJSON.html">Import File JSON</a>
+    </ul>
+    <div class="container">
+      <form id="createForm" enctype="multipart/form-data">
+        <label for="ten_giay">Tên Giày:</label>
+        <input type="text" id="ten_giay" name="ten_giay" required />
+
+        <label for="so_luong">Số Lượng:</label>
+        <input type="number" id="so_luong" name="so_luong" required />
+
+        <label for="nha_san_xuat">Nhà Sản Xuất:</label>
+        <input type="text" id="nha_san_xuat" name="nha_san_xuat" required />
+
+        <label for="size">Size:</label>
+        <input type="text" id="size" name="size" required />
+
+        <div id="ma_giay_block">
+          <label for="ma_giay">Mã Giày:</label>
+          <input type="text" id="ma_giay" name="ma_giay" readonly />
+        </div>
+        <div class="div_image_class">
+          <img
+            id="previewImage"
+            src="#"
+            alt="Preview Image"
+            style="display: none"
+            class="show_image"
+          />
+          <input
+            type="file"
+            id="imageInput"
+            name="imageInput"
+            accept="image/png image/jpeg image/jpg"
+            onchange="previewImageFn(event)"
+          />
+        </div>
+
+        <div class="button-container">
+          <button type="button" onclick="AddGiay()">Add</button>
+          <button type="button" onclick="submitGiay()">Submit</button>
+          <button type="button" onclick="refreshAddedShoesList()">
+            Refresh
+          </button>
+        </div>
+      </form>
+      <div id="message"></div>
+      <div id="added_shoes">
+        <div id="added_shoes_list"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./../Javascript/create.js"></script>
+</html>
